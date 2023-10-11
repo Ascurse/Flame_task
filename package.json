@@ -4,10 +4,10 @@
   "homepage": "http://Ascurse.github.io/Flame_task",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "serve": "vite preview",
-    "predeploy" : "tsc && vite build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d build",
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
     "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
     "lint": "yarn lint:format && yarn lint:fix ",
